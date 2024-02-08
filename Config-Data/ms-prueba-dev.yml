@@ -1,0 +1,22 @@
+server:
+  port: ${PORT:${SERVER_PORT:8081}}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+  info:
+    env:
+      enabled: true
+    app:
+      name: ms-prueba
+      version: 1.0.0
+      description: Microservicio Prueba
+
+#jwt:
+#  secret: ""
+
+info:
+  app:
+    name: ${spring.application.name}
