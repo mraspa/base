@@ -18,7 +18,12 @@ spring:
       discovery:
         locator:
           enabled: true
-#      routes:
+      routes:
+        - id: ms-prueba
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/pruebas/**
+
 #        - id:
 #          uri: lb://
 #          predicates:
