@@ -1,6 +1,1 @@
-Levantar en este orden:
-
-- eureka
-- config
-- gateway
-- ms-prueba
+Repo para configuraciones iniciales sobre microservicios
