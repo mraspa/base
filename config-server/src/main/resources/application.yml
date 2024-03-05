@@ -8,9 +8,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mraspa/base/tree/base
+          uri: https://github.com/mraspa/base.git
 #          username: ${gitUser}
 #          password: ${gitToken}
-#          default-label: config-server
+          default-label: base
           force-pull: true
           search-paths: Config-Data
