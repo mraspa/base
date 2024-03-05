@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ms-prueba-2
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+  profiles:
+    active: dev

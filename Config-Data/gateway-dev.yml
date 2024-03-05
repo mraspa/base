@@ -22,7 +22,14 @@ spring:
         - id: ms-prueba
           uri: http://localhost:8081/
           predicates:
-            - Path=/pruebas/**
+            - Path=/pruebas/**,/auth/**
+
+        - id: ms-prueba-2
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/pruebas2/**
+          filters:
+            - AuthenticationFilter
 
 #        - id:
 #          uri: lb://
@@ -41,8 +48,8 @@ management:
         #        include: "*"
         include: gateway
 
-#jwt:
-#  secret: ""
+jwt:
+  secret: "5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437"
 
 info:
   app:
